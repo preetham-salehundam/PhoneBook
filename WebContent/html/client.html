@@ -1,0 +1,9 @@
+<div>
+<div class="row">
+    <div style="float:left;clear:left;cursor:pointer;" class="span3" data-ng-repeat="client in clientDetails">
+      <div class="well" data-ui-sref='smartshop.managePhoneBook({name:client.Name})' ><span class="glyphicon glyphicon-user"></span> {{client.Name}}</div>
+    </div>
+
+<div data-ui-view></div>  <!-- phonebook.html is displayed here -->
+</div>
+</div>

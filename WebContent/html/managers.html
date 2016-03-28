@@ -1,0 +1,9 @@
+<div>
+<div class="row">
+    <div style="float:left;clear:left;cursor:pointer;" class="span3" data-ng-repeat="manager in managerDetails">
+      <div class="well" data-ui-sref='Managers.managePhoneBook({name:manager.Name})' ><span class="glyphicon glyphicon-user"></span> {{manager.Name}}</div>
+    </div>
+
+<div data-ui-view></div> <!-- phonebook.html is displayed here -->
+</div>
+</div>

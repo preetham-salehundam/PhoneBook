@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html data-ng-app="ContactsApp">
+<head>
+<meta charset="UTF-8">
+<title>Angular Demo Session</title>
+<script type="text/javascript" src="Angular_Lib/angular.js"></script>
+<script type="text/javascript" src="Angular_Lib/angular-ui-router.js"></script>
+<script type="text/javascript" src="Angular_Lib/angular-resource.js"></script>
+<script type="text/javascript" src="Angular_Lib/ngStorage.min.js"></script>
+<script type="text/javascript" src="Libs/jquery.min.js"></script>
+<script type="text/javascript" src="Libs/bootstrap.min.js"></script>
+<link href="CSS/bootstrap.min.css" rel="stylesheet">
+<link href="CSS/bootstrap1.min.css" rel="stylesheet">
+<link href="CSS/main.css" rel="stylesheet">
+<script type="text/javascript" src="app.js"></script>
+</head>
+<body data-ng-controller="ContactsController" class='container'>
+ <div class="navbar">
+    <div class="navbar-inner" style="width:54em;">
+      <a class="brand" data-ui-sref-active="Active" data-ui-sref="smartshop">Smartshop</a>
+      <ul class="nav">
+        <li data-ui-sref-active="Active"><a data-ui-sref="Managers">Manager</a></li>
+        <li data-ui-sref-active="Active"><a data-ui-sref="ProjectLead">Project Leads</a></li>
+        <li data-ui-sref-active="Active"><a data-ui-sref="TechLeads">Tech Leads</a></li>
+        <li data-ui-sref-active="Active"><a data-ui-sref="SeniorSE">Senior software Engg's</a></li>
+        <li data-ui-sref-active="Active"><a data-ui-sref="Freshers">Freshers</a></li>
+      </ul>
+    </div>
+  </div>
+   <div data-ui-view></div>
+
+</body>
+</html>

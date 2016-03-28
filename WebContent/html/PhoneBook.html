@@ -1,0 +1,11 @@
+<div>
+
+ <div style="float:right;clear:right;vertical-align: middle;position: relative;right: 23em;bottom: 10em;" class="span3" data-ng-class="{'Manageallign':currentState=='Managers.managePhoneBook','allign':currentState=='SeniorSE.managePhoneBook'}" data-ng-repeat="PhoneNumber in PhoneNumbers">
+      <div class="well" ><span class="glyphicon glyphicon-phone"></span> {{PhoneNumber.Mobile |phoneNumberFormatter }} <span style="float:right;cursor:pointer;" class="glyphicon glyphicon-comment" data-ng-style="glowIcon"	data-ng-click="attachNotes(nameDetails)" ></span></div>
+       
+       <div class="well" ><span class="glyphicon glyphicon-phone-alt"></span> &nbsp {{PhoneNumber.Extsn}}</div>
+       
+    </div>
+   
+   <div data-ng-show="showtextBox" style="float:right;clear:right;position:relative;float: right; clear: right;bottom: 17em;right: 6em;"><textarea data-ng-model="notesData" data-ng-blur="saveNotes(nameDetails)"></textarea><br><span class="stamp">{{stamp | date:'dd-MMM-yy HH:mm a'}}</span></div>
+</div>

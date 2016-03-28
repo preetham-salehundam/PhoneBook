@@ -1,0 +1,9 @@
+<div>
+<div class="row">
+    <div style="float:left;clear:left;cursor:pointer;" class="span3" data-ng-repeat="pl in plList">
+      <div class="well" data-ui-sref='ProjectLead.managePhoneBook({name:pl.Name})' ><span class="glyphicon glyphicon-user"></span> {{pl.Name}}</div> <!-- Child state ref -->
+    </div>
+
+<div data-ui-view></div> <!-- phonebook.html is displayed here -->
+</div>
+</div>
